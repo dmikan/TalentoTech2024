@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/x-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Familias en Acción</h1>
+    <p id="parrafo1" class="">
+        "Familias en Acción" es un programa de asistencia social del gobierno de Colombia que busca mejorar las condiciones de vida de las familias en situación de pobreza y vulnerabilidad. El programa proporciona transferencias monetarias condicionadas a las familias participantes, incentivando el cumplimiento de ciertos requisitos relacionados con la educación y la salud de los niños y adolescentes.
+    </p>
+    <h2>Objetivos Principales</h2>
+    <ul>
+        <li><strong>Mejorar la nutrición infantil:</strong> Las transferencias monetarias ayudan a las familias a cubrir necesidades básicas de alimentación.</li>
+        <li><strong>Fomentar la educación:</strong> El programa exige que los niños y adolescentes asistan regularmente a la escuela, promoviendo la continuidad y finalización de la educación básica.</li>
+        <li><strong>Promover el cuidado de la salud:</strong> Las familias deben cumplir con ciertos controles de salud para sus hijos, como vacunas y revisiones médicas periódicas.</li>
+    </ul>  
+    <h2>Formulario de registro</h2>
+    <form action="/submit" method="post">
+        <!-- 1. Posee cuenta bancaria -->
+        <label for="cuenta_bancaria">¿Posee cuenta bancaria?</label><br>
+        <select id="cuenta_bancaria" name="cuenta_bancaria" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <!-- 2. Ciudad -->
+        <label for="ciudad">Ciudad:</label><br>
+        <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+        <!-- 3. Departamento -->
+        <label for="departamento">Departamento:</label><br>
+        <input type="text" id="departamento" name="departamento" required><br><br>
+
+        <!-- 10. País -->
+        <label for="pais">País:</label><br>
+        <input type="text" id="pais" name="pais" required><br><br>        
+
+        <!-- 4. Posee alguna discapacidad -->
+        <label for="discapacidad">¿Posee alguna discapacidad?</label><br>
+        <select id="discapacidad" name="discapacidad" required>
+            <option value="ninguna">Ninguna</option>
+            <option value="visual">Visual</option>
+            <option value="auditiva">Auditiva</option>
+            <option value="motriz">Motriz</option>
+            <option value="otra">Otra</option>
+        </select><br><br>
+
+        <!-- 5. Es beneficiario del programa -->
+        <label for="beneficiario_programa">¿Es beneficiario del programa?</label><br>
+        <select id="beneficiario_programa" name="beneficiario_programa" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <!-- 6. Pertenece a alguna etnia -->
+        <label for="etnia">¿Pertenece a alguna etnia?</label><br>
+        <select id="etnia" name="etnia" required>
+            <option value="ninguna">Ninguna</option>
+            <option value="indigena">Indígena</option>
+            <option value="afrodescendiente">Afrodescendiente</option>
+            <option value="rom">Rom</option>
+            <option value="otra">Otra</option>
+        </select><br><br>
+
+        <!-- 7. Fecha de inscripción -->
+        <label for="fecha_inscripcion">Fecha de inscripción:</label><br>
+        <input type="date" id="fecha_inscripcion" name="fecha_inscripcion" required><br><br>
+
+        <!-- 8. Género -->
+        <label for="genero">Género:</label><br>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <!-- 9. Nivel de escolaridad -->
+        <label for="nivel_escolaridad">Nivel de escolaridad:</label><br>
+        <select id="nivel_escolaridad" name="nivel_escolaridad" required>
+            <option value="ninguno">Ninguno</option>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="tecnico">Técnico</option>
+            <option value="tecnologico">Tecnológico</option>
+            <option value="universitario">Universitario</option>
+            <option value="postgrado">Postgrado</option>
+        </select><br><br>
+
+        <!-- 12. Tipo de documento -->
+        <label for="tipo_documento">Tipo de documento:</label><br>
+        <input type="text" id="tipo_documento" name="tipo_documento" required><br><br>
+
+        <!-- 13. Tipo de población -->
+        <label for="tipo_poblacion">Tipo de población:</label><br>
+        <select id="tipo_poblacion" name="tipo_poblacion" required>
+            <option value="urbana">Urbana</option>
+            <option value="rural">Rural</option>
+        </select><br><br>
+
+        <!-- 14. Edad -->
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required min="0"><br><br>
+
+        <!-- 15. Cantidad de beneficiarios -->
+        <label for="cantidad_beneficiarios">Cantidad de beneficiarios:</label><br>
+        <input type="number" id="cantidad_beneficiarios" name="cantidad_beneficiarios" required min="1"><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h2>Predicción</h2>
+    <ul>
+        <li><strong>Tipo de beneficio:</strong> [Predicción del tipo de beneficio]</li>
+        <li><strong>Valor a recibir:</strong> [Predicción del valor a recibir]</li>
+    </ul>
+</body>
+</html>
+
